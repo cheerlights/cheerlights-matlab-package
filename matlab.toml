@@ -1,0 +1,41 @@
+name = "CheerLights"
+
+[folders]
+path = [
+    "toolbox",
+]
+test = [
+    "tests/unit",
+    "tests/live",
+]
+
+[project]
+summary = "Read the live CheerLights color and its history in MATLAB."
+
+[[package]]
+name = "cheerlights"
+display-name = "CheerLights"
+version = "1.0.0"
+id = "71206c92-f13f-495c-bbf4-edba38895790"
+package-root = "toolbox"
+summary = "Read the live CheerLights color and its history in MATLAB."
+description = "CheerLights is a global network of lights that all show the same color, and anyone can change it. This package reads the current color, its HEX and RGB values, and up to 8000 past changes from the public CheerLights feed (ThingSpeak channel 1417), and can call a function each time the color changes."
+getting-started-file = "toolbox/doc/GettingStarted.m"
+output-folder = "release"
+release-compatibility = ">=25.2.*"
+supported-platforms = ["windows", "macos", "linux"]
+product-dependencies = ["MATLAB"]
+provider = {name = "Hans Scharler", organization = "CheerLights", email = "info@cheerlights.com", url = "https://cheerlights.com"}
+
+[package.folders]
+path = ["toolbox"]
+
+[[matlab.test.test-suite]]
+name = "Unit"
+type = "folder"
+value = ["tests/unit"]
+
+[[matlab.test.test-suite]]
+name = "Live feed"
+type = "folder"
+value = ["tests/live"]
