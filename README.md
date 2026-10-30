@@ -74,7 +74,7 @@ Every function has help text: `help cheerlights.watch`.
 
 - It reads the color; it does not set it. Set the color with `/cheerlights red` on the [CheerLights Discord](https://cheerlights.com/discord).
 - `watch` checks the feed on a timer, every 15 seconds by default and no faster than every 5. For changes the moment they happen, subscribe to `mqtt.cheerlights.com` with Industrial Communication Toolbox.
-- Tested in MATLAB R2025b and R2026b on Windows.
+- Tested in MATLAB R2025b and R2026b on Windows, and in R2026b on Linux in CI.
   Building the package from source needs R2026b, for `matlab.toml` and `PackageTask`.
 
 ## Development
